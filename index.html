@@ -1,89 +1,217 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SYED SHIHAB - Personal Profile</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.2.5/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.5/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.2.5/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.2.5/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.2.5/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.2.5/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.2.5/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.2.5/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.2.5/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.2.5/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+</head>
+
+<body>
+<div id="header">
+	<div id="logo"><a href="#"><h1>SYED SHIHAB</h1></a></div>
+	<ul id="main-menu">
+    	<li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#connect">Connect</a></li>
+    </ul>
+</div>
+
+<div id="container">
+
+<!--Begin About Section-->
+    <div id="about">
+        <div class="top-divider"></div>
+        <div class="content">
+        	<img class="photo" src="images/photo.jpeg" />
+            <h2>FULL STACK WEB DEVELOPER . DEVOPS EXPERT</h2>
+            <p>PROFESSIONAL FULL STACK WEB DEVELOPER BASED ON NODEJS AND ANGULAR/REACTJS.</p>
+            <p>            
+            My experience aligns well, as I have worked with Reactjs, Redux, Gatsby, Nextjs, Angular, TypeScript, Umijs, React
+            Native and so on for several years. In addition, I have solid backend working knowledge with nodejs (Expressjs, Koa,
+            Sailsjs) and I know I would make a valuable addition to any team.
+            <br>
+            <br>
+            Currently I am working as a Senior Software Engineer and front-end lead at Brain Station 23
+            Limited.</p>
+            <p>
+                syed.shihab@outlook.com <br>
+                088 01743 949 931
+            </p>
+            <p>
+                <a href="images/syed_shihab_details.pdf" download>⎙ Download Resume</a>
+            </p>
+            <!-- <ul id="service-icons">
+            	<li class="services-design">Design</li>
+                <li class="services-mobile">Mobile</li>
+                <li class="services-film">Film</li>
+                <li class="services-photo">Photo</li>
+            </ul> -->
+        </div>
+    <!-- <div class="bottom-divider"></div>  -->
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<!--End About Section-->
+<!-- certification -->
+<div id="certification">
+    <h1>Certifications</h1>
+    <div class="top-divider"></div>
+    <div class="content">
+        <div class="col">
+            <h3>Microsoft Certified: DevOps Engineer Expert</h3>
+            <p>Issuing authority: Microsoft</p>
+        </div>
+        <div class="col">
+            <h3>Microsoft Certified: Azure Administrator Associate</h3>
+            <p>Issuing authority: Microsoft</p>
+        </div>
+        <div class="col">
+            <h3>Zend Certified Engineer</h3>
+            <p>Issuing authority: Perforce (Zend)</p>
+        </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    </div>
+</div>
+<!--Begin Experience Section-->   
+    <div id="experience">
+    	<h1>Experience</h1>
+        <div class="top-divider"></div>
+        <div class="content">
+            <div class="col">
+            <h3>BRAIN STATION 23</h3>
+            <p>Senior Software Engineer</p>
+            <p>SEP 2020 - Present</p>
+            </div>
+            
+            <div class="col col-mid">
+            <h3>DATA SOFT LTD.</h3>
+            <p>Senior Software Engineer</p>
+            <p>FEB 2020 - AUG 2020</p>
+            </div>
+            
+            <div class="col">
+            <h3>DIVA WORLD WIDE</h3>
+            <p>Web Developer</p>
+            <p>FEB 2017 - JAN 2020</p>
+            </div>
+            
+            <div class="col">
+            <h3>BANGLADESH TRADE DEVELOPMENT COUNCIL (BDTDC)</h3>
+            <p>Web Developer</p>
+            <p>MAY 2017 - OCT 2017</p>
+            </div>
+            
+            <div class="col">
+            <h3>EVEREXPERT INFO SYSTEM</h3>
+            <p>Programmer</p>
+            <p>MAR 2016 - APR 2017</p>
+            </div>
+        </div>    
+        <!-- <div class="bottom-divider"></div> -->
+    </div>
+<!--End Experience Section-->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<!--Begin Work Section-->  
+    <div id="work">
+    	<h1>Work</h1>
+        <div class="top-divider"></div>
+        	<div class="content">
+            	<ul id="work-thumbs">
+
+                	<li>
+                        <a href="http://hurraayy.com" target="_blank">
+                            <h4 style="margin: 0;">HURRAAYY</h4>
+                            <p style="font-size: 13px;">Front-end Lead<br>
+                            A TOURISM & HOTEL MANAGEMENT SYSTEM</p>
+                        </a>
+                    </li>
+                	<li>
+                        <a href="#">
+                            <h4 style="margin: 0;">BKASH AML 360</h4>
+                            <p style="font-size: 13px;">Front-end Lead<br>
+                            BKASH ANTI MONEY LOUNDARING APPLICATION</p>
+                        </a>
+                    </li>
+                	<li>
+                        <a href="#">
+                            <h4 style="margin: 0;">BKASH SIS</h4>
+                            <p style="font-size: 13px;">Front-end Lead <br> BKASH TRANSACTION SCREENING APPLICATION</p>
+                        </a>
+                    </li>
+                	<li>
+                        <a href="http://paragon.com.bd" target="_blank">
+                            <h4 style="margin: 0;">GIS MAPPING AND FILTERING</h4>
+                            <p style="font-size: 13px;">Lead <br> GIS MAPPING AND FILTERING FOR PARAGON WEB APPLICATION</p>
+                        </a>
+                    </li>
+                	<li>
+                    <a href="http://khaasfood.com" target="_blank">
+                        <h4 style="margin: 0;">E-COMMERCE - ANGULARJS</h4>
+                            <p style="font-size: 13px;">Lead <br> KHAASFOOD - A ECOMMERCE FLATFORM</p>
+                        </a>
+                    </li>
+                	<li>
+                        <a href="http://paragon.com.bd" target="_blank">
+                            <h4 style="margin: 0;">LIVE CONTENT EDITING SYSTEM</h4>
+                            <p style="font-size: 13px;">Lead <br> LIVE CONTENT EDITING SYSTEM FOR PARAGON ADMIN PANEL</p>
+                        </a>
+                    </li>
+                	<li>
+                        <a href="http://bistro-central.com" target="_blank">
+                            <h4 style="margin: 0;">RESTAURANT RESERVATION SYSTEM</h4>
+                            <p style="font-size: 13px;">Lead <br> BISTRO CENTRAL RESTAURANT RESERVATION WEB APPLICATION</p>
+                        </a>
+                    </li>
+                	<li>
+                            <h4 style="margin: 0;">OTHERS</h4>
+                            <p style="font-size: 13px;">
+                                SOUTHBREEZEBD.COM <br>
+                                TECHNOBARI.COM<br>
+                                EVEREXPERT.COM<br>
+                                BDTDC.COM<br>
+                                ...
+                            <!-- <a href=""></a> -->
+                            </p>
+                    </li>
+
+                </ul>
+            </div>
+        <!-- <div class="bottom-divider"></div> -->
+    </div>
+<!--End Work Section-->
+
+<!--Begin Connect Section-->  
+    <div id="connect">
+    	<!-- <h1>Connect</h1> -->
+        <div class="top-divider"></div>
+        	<div class="content">
+            	<!-- <div id="form">
+                	<form action="#">
+                    	<span>Name</span>
+                        <input type="text" name="name" class="name" />
+                        <span>Email</span>
+                        <input type="text" name="email" class="email"/>
+                        <span>Message</span>
+                        <textarea class="message"></textarea>
+                        <input type="submit" name="submite" value="Submit" class="submit">
+                    </form>
+                </div> -->
+                <div id="social-footer">
+                	<h2>Follow Me:</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper </p> -->
+                    <ul id="sm-links">
+                        <li><a href="https://www.linkedin.com/in/syedshihab" class="linkedin">LinkedIn</a></li>
+                    	<li><a href="https://www.github.com/desyed" class="github">Github</a></li>
+                    	<li><a href="https://www.facebook.com/shihab993" class="facebook">Facebook</a></li>
+           				<li><a href="https://www.twitter.com/shihab_dacca" class="twitter">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+<!--End Connect Section--> 
+
+</div>
+
+</body>
 </html>
