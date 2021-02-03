@@ -4,7 +4,7 @@
   font-family: "Big Shoulders Display", cursive;
   scroll-behavior: smooth;
 }
-
+/* a09f9f dedbdb */
 body {
   background: #333333 url(images/page-bg.jpg);
   margin: 0px;
@@ -13,7 +13,7 @@ body {
 }
 h1 {
   font-family: "Big Shoulders Stencil Text", cursive;
-  color: #6a6969;
+  color: #a09f9f;
 }
 h2 {
   font-family: "Big Shoulders Stencil Text", cursive;
@@ -40,6 +40,13 @@ a:hover {
 }
 a img {
   border: 0px;
+}
+.light {
+  color: #888;
+}
+.small {
+  font-size: 11px;
+  text-transform: uppercase;
 }
 
 #container {
@@ -82,8 +89,8 @@ a img {
   float: left;
   list-style: none;
   margin-left: 16px;
-  letter-spacing: 1px;
-  font-size: 12px;
+  letter-spacing: 3px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
