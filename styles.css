@@ -3,6 +3,7 @@
   box-sizing: border-box;
   font-family: "Big Shoulders Display", cursive;
   scroll-behavior: smooth;
+  transform: 0.3s;
 }
 /* a09f9f dedbdb */
 body {
@@ -45,8 +46,9 @@ a img {
   color: #888;
 }
 .small {
-  font-size: 11px;
+  font-size: 10px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #container {
