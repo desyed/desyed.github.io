@@ -14,7 +14,7 @@
 <div id="header">
 	<div id="logo"><a href="#"><h1>SYED SHIHAB</h1></a></div>
 	<ul id="main-menu">
-    	<li><a href="#about">Brief</a></li>
+    	<li><a href="#brief">Brief</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#connect">Connect</a></li>
@@ -24,7 +24,7 @@
 <div id="container">
 
 <!--Begin About Section-->
-    <div id="about">
+    <div id="brief">
         <div class="top-divider"></div>
         <div class="content">
         	<img class="photo" src="images/photo.jpeg" />
@@ -43,7 +43,7 @@
             <span style="position: relative; bottom: 4px;">░</span> 088 01743 949 931
             </p>
             <p>
-                <a href="images/syed_shihab_details.pdf" download><span class="light">⎙</span> Download Resume</a>
+                <a href="images/syed_shihab_details.pdf" download><span class="light" style="position: relative; bottom: 3px;">⏍</span> Download Resume</a>
             </p>
             <!-- <ul id="service-icons">
             	<li class="services-design">Design</li>
@@ -116,7 +116,7 @@
 
 <!--Begin Work Section-->  
     <div id="work">
-    	<h1>Professional</h1>
+    	<h1>Works</h1>
         <div class="top-divider"></div>
         	<div class="content">
             	<ul id="work-thumbs">
@@ -215,6 +215,14 @@
 <!--End Connect Section--> 
 
 </div>
-
+<!-- <script>
+    document && (document.onscroll = () => {
+        document.querySelectorAll("a").forEach(item =>{
+            item.classList.remove('active');
+        })
+        document.querySelector(`a[href='#${location.href.split('#')[1]}']`) &&
+            document.querySelector(`a[href='#${location.href.split('#')[1]}']`).classList.add('active');
+    })
+</script> -->
 </body>
 </html>
