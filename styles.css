@@ -3,7 +3,7 @@
   box-sizing: border-box;
   font-family: "Big Shoulders Display", cursive;
   scroll-behavior: smooth;
-  transform: 0.3s;
+  transition: 0.3s;
 }
 /* a09f9f dedbdb */
 body {
@@ -269,9 +269,9 @@ a img {
   margin: 0px 43px;
   padding-top: 70px;
 }
-#connect .content {
+/* #connect .content {
   overflow: auto;
-}
+} */
 #connect #form {
   width: 410px;
   float: left;
@@ -336,9 +336,13 @@ a img {
 #connect #social-footer #sm-links li a {
   display: block;
   text-indent: -9999px;
-  width: 26px;
-  height: 26px;
+  width: 18px;
+  height: 18px;
   margin-right: 10px;
+  background-size: cover !important;
+}
+#connect #social-footer #sm-links li a:hover {
+  filter: invert(1);
 }
 #connect #social-footer #sm-links li a.facebook {
   background: url(images/sm-facebook-icon.png) no-repeat;
@@ -350,7 +354,8 @@ a img {
 }
 #connect #social-footer #sm-links li a.twitter {
   background: url(images/sm-twitter-icon.png) no-repeat;
-  width: 31px;
+  background-size: 100% !important;
+  background-position: 50%;
 }
 #connect #social-footer #sm-links li a.dribble {
   background: url(images/sm-dribble-icon.png) no-repeat;
