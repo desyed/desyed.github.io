@@ -14,17 +14,17 @@
 <div id="header">
 	<div id="logo"><a href="#"><h1>SYED SHIHAB</h1></a></div>
 	<ul id="main-menu">
-    	<li><a href="#brief">Brief</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#connect">Connect</a></li>
+    	<li><a out href="#brief">Brief</a></li>
+        <li><a out href="#experience">Experience</a></li>
+        <li><a out href="#work">Work</a></li>
+        <li><a out href="#connect">Connect</a></li>
     </ul>
 </div>
 
 <div id="container">
 
 <!--Begin About Section-->
-    <div id="brief">
+    <div trace id="brief">
         <div class="top-divider"></div>
         <div class="content">
         	<img class="photo" src="images/photo.jpeg" />
@@ -76,7 +76,7 @@
     </div>
 </div>
 <!--Begin Experience Section-->   
-    <div id="experience">
+    <div trace id="experience">
     	<h1 class="light">Professional Experiences</h1>
         <div class="top-divider"></div>
         <div class="content">
@@ -115,7 +115,7 @@
 <!--End Experience Section-->
 
 <!--Begin Work Section-->  
-    <div id="work">
+    <div trace id="work">
     	<h1>Works</h1>
         <div class="top-divider"></div>
         	<div class="content">
@@ -185,7 +185,7 @@
 <!--End Work Section-->
 
 <!--Begin Connect Section-->  
-    <div id="connect">
+    <div trace id="connect">
     	<!-- <h1>Connect</h1> -->
         <div class="top-divider"></div>
         	<div class="content">
@@ -215,14 +215,34 @@
 <!--End Connect Section--> 
 
 </div>
-<!-- <script>
-    document && (document.onscroll = () => {
-        document.querySelectorAll("a").forEach(item =>{
-            item.classList.remove('active');
-        })
-        document.querySelector(`a[href='#${location.href.split('#')[1]}']`) &&
-            document.querySelector(`a[href='#${location.href.split('#')[1]}']`).classList.add('active');
-    })
-</script> -->
+<script>
+        
+    // Usage.
+    document.addEventListener( 'DOMContentLoaded', () => {
+        const traces = document.querySelectorAll("[trace]") || [];
+        const handler = () => raf( () => {
+            traces.forEach(item => {
+                checker( item ) && document.querySelectorAll("[out]").forEach(el => el.classList.remove('active'));
+                checker( item ) && document.querySelector(`a[href='#${item.id}']`) && document.querySelector(`a[href='#${item.id}']`).classList.add('active');
+            })
+        } )
+        handler()
+        window.addEventListener( 'scroll', handler )
+    } )
+
+    // The checker
+    const checker = el => {
+        const scroll = window.scrollY || window.pageYOffset
+        const boundsTop = el.getBoundingClientRect().top + scroll + 200 // 200 offset
+        const viewport = { top: scroll,bottom: scroll + window.innerHeight}
+        const bounds = { top: boundsTop, bottom: boundsTop + el.clientHeight}
+        return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom ) 
+            || ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
+    }
+
+    // requestAnimationFrame
+    const raf = window.requestAnimationFrame ||window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame ||
+        function( callback ) { window.setTimeout( callback, 1000 / 60 ) }
+</script>
 </body>
 </html>
